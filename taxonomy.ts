@@ -1,3 +1,4 @@
+import { taxonomy } from './taxonomy-json';
 /**
  * Provide taxonomical structures relating Bloom categories and
  * associated word selections for learning outcome verbs, assessment
@@ -6,7 +7,6 @@
 
 import { readFileSync } from 'jsonfile';
 const file = 'taxonomy/taxonomy.json';
-let taxonomy = readFileSync(file);
 
 /**
  * All permitted learning object classes, ie. their length category.
