@@ -42,7 +42,7 @@ export const instructions = buildTaxonomy('strategies');
 /**
  * Define the shape of the taxonomical structures we will export.
  */
-type taxonomy = {[level: string]: Set<string> };
+type taxonomy = { [level: string]: Set<string> };
 
 /**
  * Build a taxonomy object from the taxonomy.json file.
@@ -52,8 +52,10 @@ type taxonomy = {[level: string]: Set<string> };
  */
 function buildTaxonomy(which: string): taxonomy {
     let c: taxonomy = {};
-    for ( let level of levels ) {
+
+    levels.forEach(level => {
         c[level] = new Set<string>(taxonomy.taxons[level][which]);
-    }
+    });
+
     return c;
 }
