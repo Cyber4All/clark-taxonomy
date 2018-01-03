@@ -13,9 +13,14 @@ Export | Type | Description
 `quizzes`|`{string:Set<string>}`|a dictionary mapping Bloom taxons to a set of appropriate quiz/tests
 `instructions`|`{string:Set<string>}`|a dictionary mapping Bloom taxons to a set of instructional strategies
 
-## Installation
-This package goes _inside_ your other CLARK repositories. From the typescript source directory of your CLARK repo workspace, follow these steps:
-1) run `git clone https://github.com/Cyber4All/taxonomy.git`
-2) run `npm install -save jsonfile`
-3) run `npm install --save-dev @types/jsonfile`
-4) Add `/<src directory>/taxonomy` to your `.gitignore` file.
+## Installation & Updates
+This package is included as a submodule in relevant CLARK repositories. If you have
+pulled the latest version of a relevant repository and it is missing any submodules,
+use the following commands:
+```
+git submodule init
+git submodule update --remote --merge
+```
+When changes are pushed to this repo, you will need to repeat the 
+`git submodule update --remote --merge` command to include them in your instances of 
+any repositories using it.
