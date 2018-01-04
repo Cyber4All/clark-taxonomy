@@ -3,9 +3,9 @@
   "version": "1.0.1",
   "description": "CLARK Taxonomy",
   "main": "index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
-    "build": "tsc",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc"
   },
   "repository": {
     "type": "git",
@@ -23,5 +23,8 @@
   "dependencies": {
     "@types/jsonfile": "^4.0.1",
     "jsonfile": "^4.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^2.6.2"
   }
 }
