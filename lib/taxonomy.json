@@ -60,7 +60,12 @@
                 "Lab",
                 "Oral Presentation",
                 "Project",
-                "Quiz/Test",
+                "Essay (Quiz/Test)",
+                "Fill in the Blank/Short Answer (Quiz/Test)",
+                "Matching (Quiz/Test)",
+                "Multiple Choice (Quiz/Test)",
+                "Open-Response (Quiz/Test)",
+                "True/False Questions",
                 "Research Paper"
             ],
             "quizzes": [
@@ -184,7 +189,10 @@
                 "Lab",
                 "Oral Presentation",
                 "Project",
-                "Quiz/Test",
+                "Essay (Quiz/Test)",
+                "Fill in the Blank/Short Answer (Quiz/Test)",
+                "Multiple Choice (Quiz/Test)",
+                "Open-Response (Quiz/Test)",
                 "Research Paper"
             ],
             "quizzes": [
@@ -314,7 +322,8 @@
                 "Lab",
                 "Oral Presentation",
                 "Project",
-                "Quiz/Test",
+                "Essay (Quiz/Test)",
+                "Open-Response (Quiz/Test)",
                 "Research Paper"
             ],
             "quizzes": [
