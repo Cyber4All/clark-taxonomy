@@ -1,5 +1,5 @@
 {
-  "name": "clark-taxonomy",
+  "name": "@cyber4all/clark-taxonomy",
   "version": "1.0.14",
   "description": "CLARK Taxonomy",
   "main": "dist/index.js",
