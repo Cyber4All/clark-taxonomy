@@ -59,8 +59,8 @@ export const taxonomy = {
                 'Open-Response (Quiz/Test)',
                 'Oral Presentation',
                 'Project',
-                'Research Paper'
-                'True/False Questions',
+                'Research Paper',
+                'True/False Questions'
             ],
             'quizzes': [
                 'Essay',
@@ -82,7 +82,7 @@ export const taxonomy = {
                 'Elaboration',
                 'Examples',
                 'Illustrations',
-                'Imagery'
+                'Imagery',
                 'Learner',
                 'Lecture',
                 'Metaphoric techniques',
@@ -95,7 +95,7 @@ export const taxonomy = {
                 'Test',
                 'Video',
                 'Visuals',
-                'Writing',
+                'Writing'
             ]
         },
         'Apply and Analyze': {
@@ -153,7 +153,7 @@ export const taxonomy = {
                 'Relate',
                 'Schedule',
                 'Select',
-                'Self-instructional training'
+                'Self-instructional training',
                 'Shop',
                 'Simplify',
                 'Sketch',
@@ -165,7 +165,7 @@ export const taxonomy = {
                 'Test',
                 'Theme',
                 'Use',
-                'Utilize',
+                'Utilize'
             ],
             'assessments': [
                 'Case Study',
@@ -227,7 +227,7 @@ export const taxonomy = {
                 'Create',
                 'Criteria',
                 'Criticize',
-                'Debug'
+                'Debug',
                 'Decide',
                 'Deduct',
                 'Defend',
@@ -277,7 +277,7 @@ export const taxonomy = {
                 'Suppose',
                 'Test',
                 'Theorize',
-                'Value',
+                'Value'
             ],
             'assessments': [
                 'Case Study',
@@ -306,7 +306,7 @@ export const taxonomy = {
                 'Exercises',
                 'Problems',
                 'Projects',
-                'Simulations',
+                'Simulations'
             ]
         }
     }
