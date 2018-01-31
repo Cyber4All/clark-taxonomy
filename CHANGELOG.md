@@ -20,7 +20,7 @@ Please visit Keep a Changelog for more information on formatting your entries, o
 
 - Re-structured taxonomy-json.ts to use maps of each entry; the key of each map entry is a camelcase version to be used in code, and the value of each entry is the plaintext version to be used in the frontend.
 - Adjusted index.ts to use mapper.ts rather than taxonomy.ts
-- Rather than sending out one massive list for each of the dropdown categories (verbs, assessments, quizzes, and instructions), separate sets are made and exported for each taxon's collection of each category, simplifying distinctions during utilization. These sets are named using the two words of their relative taxon and the name of their category, separated by underscores (i.e. 'remember/\_understand\_verbs').
+- Rather than sending out one massive list for each of the dropdown categories (verbs, assessments, quizzes, and instructions), separate sets are made and exported for each taxon's collection of each category, simplifying distinctions during utilization. These sets are named using the two words of their relative taxon and the name of their category, separated by underscores (i.e. 'remember/\_understand\_verbs'). In items with the "(Quiz/Test)" designation, that portion of each title has been shortened to QT in the relevant keys. 
 
 ### Removed
 
