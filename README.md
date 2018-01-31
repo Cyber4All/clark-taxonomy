@@ -11,7 +11,31 @@ Export | Type | Description
 ---|---|---
 `lengths`|`Set<string>`|a set of all lengths (nanomodule, course, etc...)
 `levels`|`Set<string>`|a set of all Bloom taxons (Remember, Apply, etc...)
-`verbs`|`{string:Set<string>}`|a dictionary mapping Bloom taxons to a set of action verbs
-`assessments`|`{string:Set<string>}`|a dictionary mapping Bloom taxons to a set of assessment plans
-`quizzes`|`{string:Set<string>}`|a dictionary mapping Bloom taxons to a set of appropriate quiz/tests
-`instructions`|`{string:Set<string>}`|a dictionary mapping Bloom taxons to a set of instructional strategies
+
+### Verbs
+Export | Type | Description
+---|---|---
+`remember_understand_verbs`|`Set<string>`|a set of mapped verbs relevant to the Remember and Understand taxon
+`apply_analyze_verbs`|`Set<string>`|a set of mapped verbs relevant to the Apply and Analyze taxon
+`evaluate_synthesize_verbs`|`Set<string>`|a set of mapped verbs relevant to the Evaluate and Synthesize taxon
+
+### Assessments
+Export | Type | Description
+---|---|---
+`remember_understand_assessments`|`Set<string>`|a set of mapped assessments relevant to the Remember and Understand taxon
+`apply_analyze_assessments`|`Set<string>`|a set of mapped assessments relevant to the Apply and Analyze taxon
+`evaluate_synthesize_assessments`|`Set<string>`|a set of mapped assessments relevant to the Evaluate and Synthesize taxon
+
+### Quizzes
+Export | Type | Description
+---|---|---
+`remember_understand_quizzes`|`Set<string>`|a set of mapped quizzes relevant to the Remember and Understand taxon
+`apply_analyze_quizzes`|`Set<string>`|a set of mapped quizzes relevant to the Apply and Analyze taxon
+`evaluate_synthesize_quizzes`|`Set<string>`|a set of mapped quizzes relevant to the Evaluate and Synthesize taxon
+
+### Instructions
+Export | Type | Description
+---|---|---
+`remember_understand_instructions`|`Set<string>`|a set of mapped strategies relevant to the Remember and Understand taxon
+`apply_analyze_instructions`|`Set<string>`|a set of mapped strategies relevant to the Apply and Analyze taxon
+`evaluate_synthesize_instructions`|`Set<string>`|a set of mapped strategies relevant to the Evaluate and Synthesize taxon
