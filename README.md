@@ -9,8 +9,8 @@
 ## Exports
 Export | Type | Description
 ---|---|---
-`lengths`|`Set<string>`|a set of all lengths (nanomodule, course, etc...)
-`levels`|`Set<string>`|a set of all Bloom taxons (Remember, Apply, etc...)
+`lengths`|`Set<string>`|a set of all lengths, in form of a map (nanomodule, course, etc...)
+`levels`|`Set<string>`|a set of all Bloom taxons, in form of a map (Remember, Apply, etc...)
 
 ### Verbs
 Export | Type | Description
