@@ -305,7 +305,8 @@ export const taxonomy = {
         'Test',
         'Theorize',
         'Code',
-        'Debug'
+        'Debug',
+        'Implement'
       ],
       assessments: [
         'Case Study',
