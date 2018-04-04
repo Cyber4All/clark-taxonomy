@@ -3,6 +3,8 @@ export const taxonomy = {
   taxons: {
     'Remember and Understand': {
       verbs: [
+        'Remember',
+        'Understand',
         'Define',
         'List',
         'Record',
@@ -125,7 +127,6 @@ export const taxonomy = {
         'Select',
         'Solve',
         'Utilize',
-        'Analyze',
         'Appraise',
         'Calculate',
         'Compare',
@@ -213,11 +214,11 @@ export const taxonomy = {
     },
     'Evaluate and Synthesize': {
       verbs: [
+        'Synthesize',
         'Appraise',
         'Assess',
         'Compare',
         'Estimate',
-        'Evaluate',
         'Judge',
         'Measure',
         'Rate',
