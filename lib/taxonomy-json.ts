@@ -1,7 +1,7 @@
 export const taxonomy = {
   lengths: ['nanomodule', 'micromodule', 'module', 'unit', 'course'],
   taxons: {
-    'Remember and Understand': {
+    'remember and understand': {
       verbs: [
         'Remember',
         'Understand',
@@ -45,61 +45,9 @@ export const taxonomy = {
         'Show',
         'Summarize',
         'Translate'
-      ],
-      assessments: [
-        'Case Study',
-        'Code Check',
-        'Competition',
-        'Essay',
-        'Group',
-        'Lab',
-        'Oral Presentation',
-        'Project',
-        'Essay (Quiz/Test)',
-        'Fill in the Blank/Short Answer (Quiz/Test)',
-        'Matching (Quiz/Test)',
-        'Multiple Choice (Quiz/Test)',
-        'Open-Response (Quiz/Test)',
-        'True/False Questions',
-        'Research Paper'
-      ],
-      quizzes: [
-        'Essay',
-        'Fill in the Blank/Short Answer',
-        'Matching',
-        'Multiple Choice',
-        'Open-Response',
-        'True/False Questions'
-      ],
-      strategies: [
-        'Audio',
-        'Examples',
-        'Illustrations',
-        'Lecture',
-        'Video',
-        'Visuals',
-        'Analogies',
-        'Assessment',
-        'Discussion',
-        'Learner',
-        'Presentations',
-        'Questions',
-        'Reports',
-        'Review',
-        'Test',
-        'Writing',
-        'Chunking',
-        'Elaboration',
-        'Classification',
-        'Concept mapping',
-        'Advanced organizers',
-        'Metaphoric techniques',
-        'Rehearsal',
-        'Mnemonics',
-        'Imagery'
       ]
     },
-    'Apply and Analyze': {
+    'apply and analyze': {
       verbs: [
         'Apply',
         'Demonstrate',
@@ -172,47 +120,9 @@ export const taxonomy = {
         'Direct explanation',
         'Dyadic instruction',
         'Self-instructional training'
-      ],
-      assessments: [
-        'Case Study',
-        'Code Check',
-        'Competition',
-        'Essay',
-        'Group',
-        'Lab',
-        'Oral Presentation',
-        'Project',
-        'Essay (Quiz/Test)',
-        'Fill in the Blank/Short Answer (Quiz/Test)',
-        'Multiple Choice (Quiz/Test)',
-        'Open-Response (Quiz/Test)',
-        'Research Paper'
-      ],
-      quizzes: [
-        'Essay',
-        'Fill in the Blank/Short Answer',
-        'Multiple Choice',
-        'Open-Response'
-      ],
-      strategies: [
-        'Demonstrations',
-        'Exercises',
-        'Microteach',
-        'Practice',
-        'Projects',
-        'Simulations',
-        'Sketches',
-        'Case Studies',
-        'Critical Incidents',
-        'Discussion',
-        'Exercises',
-        'Problems',
-        'Questions',
-        'Role Play',
-        'Test'
       ]
     },
-    'Evaluate and Synthesize': {
+    'evaluate and synthesize': {
       verbs: [
         'Synthesize',
         'Appraise',
@@ -303,35 +213,6 @@ export const taxonomy = {
         'Code',
         'Debug',
         'Implement'
-      ],
-      assessments: [
-        'Case Study',
-        'Code Check',
-        'Competition',
-        'Essay',
-        'Group',
-        'Lab',
-        'Oral Presentation',
-        'Project',
-        'Essay (Quiz/Test)',
-        'Open-Response (Quiz/Test)',
-        'Research Paper'
-      ],
-      quizzes: ['Essay', 'Open-Response'],
-      strategies: [
-        'Appraisals',
-        'Case Studies',
-        'Critiques',
-        'Exercises',
-        'Projects',
-        'Simulations',
-        'Case Studies',
-        'Constructs',
-        'Creative Exercises',
-        'Develop Plans',
-        'Problems',
-        'Projects',
-        'Simulations'
       ]
     }
   }

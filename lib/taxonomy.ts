@@ -8,32 +8,21 @@ import { taxonomy } from './taxonomy-json';
 /**
  * All permitted learning object classes, ie. their length category.
  */
-export const lengths = new Set<string>(taxonomy.lengths);
+export const lengths = new Set<string>(
+  taxonomy.lengths.map(l => l.toLowerCase())
+);
 
 /**
  * All permitted Bloom taxons.
  */
-export const levels = new Set<string>(Object.keys(taxonomy.taxons));
+export const levels = new Set<string>(
+  Object.keys(taxonomy.taxons).map(key => key.toLowerCase())
+);
 
 /**
  * All permitted learning outcomes for each Bloom taxon.
  */
 export const verbs = buildTaxonomy('verbs');
-
-/**
- * All permitted assessment plans for each Bloom taxon.
- */
-export const assessments = buildTaxonomy('assessments');
-
-/**
- * All permitted test/quiz sub-classes for each Bloom taxon.
- */
-export const quizzes = buildTaxonomy('quizzes');
-
-/**
- * All permitted instructional strategies for each Bloom taxon.
- */
-export const instructions = buildTaxonomy('strategies');
 
 /**
  * Define the shape of the taxonomical structures we will export.
