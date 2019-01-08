@@ -1,3 +1,5 @@
-import { lengths, levels, verbs } from './taxonomy';
+import { taxonomy } from './taxonomy';
 
-export { lengths, levels, verbs };
+const lengths = taxonomy.lengths;
+const levels = Object.keys(taxonomy.taxons).map(key => key.toLowerCase());
+export { taxonomy, lengths, levels };

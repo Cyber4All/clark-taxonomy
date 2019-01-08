@@ -1,46 +1,219 @@
-import { taxonomy } from './taxonomy-json';
-/**
- * Provide taxonomical structures relating Bloom categories and
- * associated word selections for learning outcome verbs, assessment
- * plans, and instructional strategies.
- */
-
-/**
- * All permitted learning object classes, ie. their length category.
- */
-export const lengths = new Set<string>(
-  taxonomy.lengths.map(l => l.toLowerCase())
-);
-
-/**
- * All permitted Bloom taxons.
- */
-export const levels = new Set<string>(
-  Object.keys(taxonomy.taxons).map(key => key.toLowerCase())
-);
-
-/**
- * All permitted learning outcomes for each Bloom taxon.
- */
-export const verbs = buildTaxonomy('verbs');
-
-/**
- * Define the shape of the taxonomical structures we will export.
- */
-type taxonomy = { [level: string]: Set<string> };
-
-/**
- * Build a taxonomy object from the taxonomy.json file.
- * @param {string} which the field to pull from the taxon
- *
- * @returns {taxonomy}
- */
-function buildTaxonomy(which: string): taxonomy {
-  let c: taxonomy = {};
-
-  levels.forEach(level => {
-    c[level] = new Set<string>(taxonomy.taxons[level][which]);
-  });
-
-  return c;
-}
+export const taxonomy = {
+  lengths: ['nanomodule', 'micromodule', 'module', 'unit', 'course'],
+  taxons: {
+    'remember and understand': {
+      verbs: [
+        'remember',
+        'understand',
+        'define',
+        'list',
+        'record',
+        'repeat',
+        'define',
+        'find',
+        'label',
+        'list',
+        'match',
+        'name',
+        'omit',
+        'recall',
+        'relate',
+        'select',
+        'show',
+        'spell',
+        'tell',
+        'describe',
+        'discuss',
+        'explain',
+        'express',
+        'identify',
+        'recognize',
+        'restate',
+        'translate',
+        'classify',
+        'compare',
+        'contrast',
+        'demonstrate',
+        'explain',
+        'extend',
+        'illustrate',
+        'infer',
+        'interpret',
+        'outline',
+        'relate',
+        'rephrase',
+        'show',
+        'summarize',
+        'translate'
+      ]
+    },
+    'apply and analyze': {
+      verbs: [
+        'apply',
+        'demonstrate',
+        'dramatize',
+        'employ',
+        'illustrate',
+        'interpret',
+        'operate',
+        'practice',
+        'schedule',
+        'shop',
+        'sketch',
+        'use',
+        'apply',
+        'build',
+        'construct',
+        'develop',
+        'experiment with',
+        'identify',
+        'interview',
+        'make use of',
+        'model',
+        'organize',
+        'plan',
+        'select',
+        'solve',
+        'utilize',
+        'appraise',
+        'calculate',
+        'compare',
+        'contrast',
+        'criticize',
+        'debate',
+        'diagram',
+        'differentiate',
+        'distinguish',
+        'experiment',
+        'inspect',
+        'inventory',
+        'question',
+        'relate',
+        'test',
+        'analyze',
+        'assume',
+        'categorize',
+        'classify',
+        'compare',
+        'conclude',
+        'contrast',
+        'discover',
+        'dissect',
+        'distinguish',
+        'divide',
+        'examine',
+        'function',
+        'inference',
+        'inspect',
+        'list',
+        'motive',
+        'relate',
+        'simplify',
+        'survey',
+        'take part in',
+        'test for',
+        'theme',
+        'guided discovery',
+        'observation',
+        'guided participation',
+        'strategy instruction',
+        'direct explanation',
+        'dyadic instruction',
+        'self-instructional training'
+      ]
+    },
+    'evaluate and synthesize': {
+      verbs: [
+        'synthesize',
+        'appraise',
+        'assess',
+        'compare',
+        'estimate',
+        'judge',
+        'measure',
+        'rate',
+        'revise',
+        'score',
+        'select',
+        'value',
+        'agree',
+        'appraise',
+        'assess',
+        'award',
+        'compare',
+        'conclude',
+        'criteria',
+        'criticize',
+        'decide',
+        'deduct',
+        'defend',
+        'determine',
+        'disprove',
+        'estimate',
+        'evaluate',
+        'explain',
+        'interpret',
+        'judge',
+        'justify',
+        'mark',
+        'measure',
+        'opinion',
+        'perceive',
+        'prioritize',
+        'prove',
+        'rate',
+        'recommend',
+        'rule on',
+        'select',
+        'support',
+        'value',
+        'arrange',
+        'collect',
+        'compose',
+        'construct',
+        'create',
+        'design',
+        'formulate',
+        'manage',
+        'organize',
+        'plan',
+        'prepare',
+        'propose',
+        'set up',
+        'adapt',
+        'build',
+        'change',
+        'combine',
+        'compile',
+        'compose',
+        'construct',
+        'create',
+        'delete',
+        'design',
+        'develop',
+        'discuss',
+        'elaborate',
+        'estimate',
+        'formulate',
+        'imagine',
+        'improve',
+        'invent',
+        'make up',
+        'maximize',
+        'minimize',
+        'modify',
+        'originate',
+        'plan',
+        'predict',
+        'propose',
+        'solve',
+        'suppose',
+        'test',
+        'theorize',
+        'code',
+        'debug',
+        'implement'
+      ]
+    }
+  }
+};
