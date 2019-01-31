@@ -53,6 +53,7 @@ export const taxonomy = {
         'classify',
         'compare',
         'conclude',
+        'configure',
         'construct',
         'contrast',
         'criticize',
